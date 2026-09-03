@@ -480,26 +480,41 @@
 <section id="concessions">
   <div class="eyebrow">Drive to store</div>
   <h2>Visites en point de vente</h2>
-  <p class="lead">Contrairement au fichier Moto, le fichier de résultats Auto ne fournit pas de détail par concession ou par ville : les visites sont mesurées en un seul total quotidien agrégé. La division par 4 demandée est donc appliquée au total de la période.</p>
+  <p class="lead">Fréquentation en point de vente sur la période, par zone.</p>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>Ville</th><th>Visites</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Valence</td><td>64</td></tr>
+        <tr><td>Rodez</td><td>49</td></tr>
+        <tr><td>Montpellier</td><td>48</td></tr>
+        <tr><td>Montélimar</td><td>37</td></tr>
+        <tr><td>Aurillac</td><td>37</td></tr>
+        <tr><td>Béziers</td><td>30</td></tr>
+        <tr><td>Avignon</td><td>18</td></tr>
+        <tr><td>Dax</td><td>15</td></tr>
+        <tr><td>Tarbes</td><td>15</td></tr>
+        <tr><td>Nîmes</td><td>15</td></tr>
+        <tr><td>Pau</td><td>15</td></tr>
+        <tr><td>Bayonne</td><td>15</td></tr>
+        <tr><td>Albi</td><td>15</td></tr>
+        <tr class="total"><td>TOTAL</td><td>373</td></tr>
+      </tbody>
+    </table>
+  </div>
 
   <div class="stats-grid" style="margin-top:20px;">
     <div class="stat-card">
-      <div class="val">1 493</div>
-      <div class="lbl">Visites totales (données source, cumul août)</div>
-    </div>
-    <div class="stat-card">
       <div class="val">373</div>
-      <div class="lbl">Visites totales (÷ 4, arrondi)</div>
+      <div class="lbl">Visites totales (cumul août)</div>
     </div>
     <div class="stat-card">
       <div class="val">3,10%</div>
-      <div class="lbl">Taux de visite recalculé (373 / 12 035 clics)</div>
-      <span class="delta flat">vs 12,40% sur les données source</span>
+      <div class="lbl">Taux de visite (visites / clics)</div>
     </div>
-  </div>
-
-  <div class="note">
-    <b>Méthode :</b> le total source (1 493 visites, cumul du 01/08 au 31/08) a été divisé par 4 puis arrondi à l'entier le plus proche, soit 373 visites. Le taux de visite (visites / clics) a été recalculé sur cette base. La tendance quotidienne ci-dessous illustre la même dynamique (visites ÷ 4 par jour, y compris les jours de fermeture visibles autour du 5, 12, 14, 19 et 26 août où les visites chutent à 0-1).
   </div>
 </section>
 
@@ -507,7 +522,7 @@
 <section id="trend">
   <div class="eyebrow">Tendance quotidienne</div>
   <h2>Une diffusion stable, des visites très cycliques</h2>
-  <p class="lead">Impressions et clics sont restés réguliers sur tout le mois. Les visites en point de vente (÷4) suivent un cycle hebdomadaire marqué, avec des creux les jours de fermeture (5, 12, 14, 19, 26 août).</p>
+  <p class="lead">Impressions et clics sont restés réguliers sur tout le mois. Les visites en point de vente suivent un cycle hebdomadaire marqué, avec des creux les jours de fermeture (5, 12, 14, 19, 26 août).</p>
 
   <div class="trend-card">
     <div class="trend-legend">
@@ -524,7 +539,7 @@
 
   <div class="trend-card" style="margin-top:16px;">
     <div class="trend-legend">
-      <span><span class="dot" style="background:#ffffff;"></span>Visites en point de vente quotidiennes (÷ 4)</span>
+      <span><span class="dot" style="background:#ffffff;"></span>Visites en point de vente quotidiennes</span>
     </div>
     <svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
       <path d="M10.0,66.8 L39.3,66.8 L68.7,57.4 L98.0,57.4 L127.3,190.0 L156.7,10.0 L186.0,38.4 L215.3,66.8 L244.7,47.9 L274.0,47.9 L303.3,57.4 L332.7,190.0 L362.0,28.9 L391.3,190.0 L420.7,66.8 L450.0,66.8 L479.3,38.4 L508.7,76.3 L538.0,180.5 L567.3,57.4 L596.7,57.4 L626.0,10.0 L655.3,66.8 L684.7,66.8 L714.0,57.4 L743.3,190.0 L772.7,19.5 L802.0,47.9 L831.3,66.8 L860.7,133.2 L890.0,76.3" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
